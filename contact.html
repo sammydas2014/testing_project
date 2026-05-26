@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Zen Dog Vet In-Home Euthanasia New York</title>
+    <meta name="description" content="Contact Zen Dog Vet to schedule compassionate, gentle, in-home pet euthanasia services across New York.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ----- Design Tokens ----- */
+        :root {
+            --font-display: 'Instrument Serif', Georgia, serif;
+            --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --text-dark: #1a1a1a;
+            --text-muted: #888;
+            --border: #d8d8d8;
+            --input-bg: #ffffff;
+            --radius: 6px;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: #ffffff;
+            color: var(--text-dark);
+        }
+
+        /* ----- Contact Section ----- */
+        .contact-section {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            background: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Form area — white */
+        .contact-top {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 52px 20px 40px;
+        }
+
+        /* Logo */
+        .contact-logo {
+            width: 88px;
+            height: auto;
+            display: block;
+            margin-bottom: 16px;
+        }
+
+        /* Heading */
+        .contact-heading {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            font-weight: 400;
+            color: var(--text-dark);
+            letter-spacing: -0.01em;
+            margin-bottom: 32px;
+        }
+
+        /* Form */
+        .contact-form {
+            width: 100%;
+            max-width: 580px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .form-field {
+            width: 100%;
+        }
+
+        .form-field input,
+        .form-field textarea {
+            width: 100%;
+            padding: 13px 16px;
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: var(--text-dark);
+            background: var(--input-bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            outline: none;
+            transition: border-color 0.2s;
+            resize: none;
+        }
+
+        .form-field input::placeholder,
+        .form-field textarea::placeholder {
+            color: var(--text-muted);
+        }
+
+        .form-field input:focus,
+        .form-field textarea:focus {
+            border-color: #999;
+        }
+
+        .form-field textarea {
+            height: 110px;
+            line-height: 1.5;
+        }
+
+        /* Helper text */
+        .form-hint {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+            margin-top: -4px;
+        }
+
+        /* Submit button */
+        .btn-submit {
+            width: 100%;
+            padding: 16px;
+            background: var(--text-dark);
+            color: #ffffff;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 500;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            letter-spacing: 0.02em;
+            transition: background 0.2s;
+            margin-top: 4px;
+        }
+
+        .btn-submit:hover {
+            background: #333;
+        }
+
+        /* ----- Background image area ----- */
+        .contact-bg {
+            position: relative;
+            width: 100%;
+            flex: 1;
+            min-height: 400px;
+        }
+
+        /* White-to-transparent gradient overlaid on top of the image */
+        .contact-bg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, #ffffff 0%, rgba(255,255,255,0.6) 30%, rgba(255,255,255,0) 70%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .contact-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            display: block;
+        }
+
+        /* ----- Responsive ----- */
+        @media (max-width: 560px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="contact-section" aria-labelledby="contact-heading">
+
+        <!-- White form area -->
+        <div class="contact-top">
+
+            <img src="images/cont_logo.png" alt="Zen Dog Vet logo" class="contact-logo">
+
+            <h1 id="contact-heading" class="contact-heading">Contact Us</h1>
+
+            <form class="contact-form" novalidate>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <input type="text" name="name" placeholder="Enter Name" autocomplete="name">
+                    </div>
+                    <div class="form-field">
+                        <input type="text" name="pet_name" placeholder="Pet's Name">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <input type="email" name="email" placeholder="Email" autocomplete="email">
+                    </div>
+                    <div class="form-field">
+                        <input type="text" name="zip" placeholder="Zip Code" autocomplete="postal-code">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <input type="tel" name="phone" placeholder="Phone Number" autocomplete="tel">
+                    </div>
+                    <div class="form-field">
+                        <input type="text" name="schedule" placeholder="When Are You Looking To Schedule?">
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <textarea name="description" placeholder="Description"></textarea>
+                </div>
+
+                <p class="form-hint">i.e Rocky has had a history of chronic kidney disease and is not eating. We are looking to euthanize him at home in Manhattan in the next 3-4 days.</p>
+
+                <button type="submit" class="btn-submit">Submit</button>
+
+            </form>
+        </div>
+
+        <!-- Background image blending from white -->
+        <div class="contact-bg" role="presentation">
+            <img src="images/form_bg.png" alt="">
+        </div>
+
+    </section>
+
+</body>
+</html>
